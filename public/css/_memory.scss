@@ -1,0 +1,208 @@
+.introduce {
+    padding: 45px 20px 150px;
+    max-width: 840px;
+    margin: 0 auto;
+    &_content {
+        margin-bottom: 60px;
+        p {
+            font-family: $font-serif;
+            margin: 0;
+            line-height: 1.8;
+            text-align: justify;
+        }
+    }
+    &_btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .btn {
+            padding: 12px 45px;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        &_btns {
+            .btn {
+                padding: 12px;
+                width: calc(50% - 10px);
+            }
+        }
+    }
+}
+
+.form {
+  padding: 120px 20px 150px;
+  max-width: 640px;
+  margin: 0 auto;
+  &_title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: $font-serif;
+    font-weight: 900;
+    color: $primary-900;
+  }
+  .input-item {
+    width: 100%;
+    > label {
+      width: 90px;
+    }
+    > input {
+      width: calc(100% - 90px);
+    }
+    .radio-main {
+      width: calc(100% - 90px);
+    }
+    &.select-type {
+      height: auto;
+      display: block;
+      > label {
+        width: 100%;
+        margin-bottom: 12px;
+        text-align: left;
+      }
+      .row {
+        margin-left: -15px;
+        margin-right: -15px;
+        > div {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+      .select-type {
+        &_item {
+          position: relative;
+          width: 100%;
+          padding-bottom: 70%;
+          &:not(.active) {
+            &:hover {
+              .select-type {
+                &_mask {
+                  opacity: 0;
+                }
+                &_text {
+                  padding-left: 16px;
+                  opacity: 1;
+                }
+                &_arrow {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+          &.active {
+            cursor: inherit;
+            .select-type {
+              &_mask {
+                opacity: 0;
+              }
+              &_text {
+                opacity: 1;
+              }
+            }
+          }
+        }
+        &_pic {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          top: 0;
+          left: 0;
+        }
+        &_mask {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.63);
+          transition: $transition;
+        }
+        &_text {
+          position: absolute;
+          width: 100%;
+          padding: 16px;
+          left: 0;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          padding: 16px 16px 16px 52px;
+          transition: $transition;
+          opacity: 0.8;
+          background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.7) 0%,
+            transparent 100%
+          );
+        }
+        &_name {
+          font-size: 20px;
+          font-weight: 900;
+          color: $white;
+          letter-spacing: 0.03em;
+          font-family: $font-serif;
+          margin: 0;
+        }
+        &_arrow {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          border: 1px solid $white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: $transition;
+          opacity: 0;
+          span {
+            font-size: 12px;
+            &::before {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_btns {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .btn {
+      padding: 12px 35px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .input-item {
+      &.select-type {
+        .row {
+          margin-left: -8px;
+          margin-right: -8px;
+          > div {
+            padding-left: 8px;
+            padding-right: 8px;
+          }
+        }
+        .select-type {
+          &_item {
+            padding-bottom: 140%;
+          }
+          &_text {
+            padding: 16px 8px;
+          }
+          &_arrow {
+            display: none;
+          }
+        }
+      }
+    }
+    &_btns {
+    .btn {
+      width: calc(50% - 10px);
+    }
+  }
+  }
+}

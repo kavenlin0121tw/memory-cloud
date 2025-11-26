@@ -94,6 +94,7 @@ a {
     color: $text;
     display: block;
     transition: $transition;
+    cursor: pointer;
     &:hover {
         text-decoration: none;
         color: $primary-600;
@@ -131,6 +132,7 @@ ul {
         color: $primary-400;
         font-family: $font-serif;
         font-weight: 700;
+        width: fit-content;
         .btn {
             &-text {
                 color: $primary-400;
@@ -184,6 +186,7 @@ ul {
         color: $white;
         font-family: $font-serif;
         font-weight: 700;
+        width: fit-content;
         .btn {
             &-text {
                 color: $white;
@@ -225,6 +228,87 @@ ul {
 .text {
     font-size: 16px;
     font-family: $font-serif;
+}
+
+.input-item {
+    display: flex;
+    height: 45px;
+    margin-bottom: 20px;
+    >label {
+        padding: 8px;
+        background-color: $primary-500;
+        color: $white;
+        font-family: $font-serif;
+        font-weight: 900;
+        text-align: center;
+        display: block;
+        height: 100%;
+        letter-spacing: 0.05em;
+        border: 1px solid $primary-500;
+        &.bg-transparent {
+            border: 0;
+            color: $text;
+
+        }
+    }
+    >input {
+        height: 100%;
+        padding: 0 10px;
+        border: 1px solid $primary-500;
+    }
+    &.radio {
+        .radio {
+            &-main {
+                display: flex;
+                align-items: center;
+                gap: 28px;
+                padding: 8px 20px;
+            }
+            &-item {
+                gap: 8px;
+                display: flex;
+                align-items: center;
+                padding-bottom: 4px;
+                >input {
+                    width: 16px;
+                    height: 16px;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid $primary-500;
+                        top: 0;
+                        left: 0;
+                        border-radius: 50%;
+                    }
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 60%;
+                        height: 60%;
+                        background-color: $primary-500;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        border-radius: 50%;
+                        opacity: 0;
+                    }
+                    &:checked {
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+                }
+                >label {
+                    font-size: 16px;
+                    font-family: $font-serif;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
 }
 
 .header {
