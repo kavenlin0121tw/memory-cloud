@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>追思雲</title>
+    <meta property="og:image" content="./public/img/share.jpg" />
+    <meta property="og:url" content="./public/img/share.jpg" />
+    <meta property="og:image" content="./public/img/share.jpg" />
+    <meta property="og:url" content="./public/img/share.jpg" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/icomoon/style.css" />
+    <link rel="stylesheet" href="./public/css/aos/aos.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__main">
+          <a href="./index.html" class="header__logo"
+            ><img src="./public/img/logo.svg" alt=""
+          /></a>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="./about.html">關於追思雲</a></li>
+              <li><a href="">最新公告</a></li>
+              <li><a href="">線上追思</a></li>
+              <li><a href="">個人故事館</a></li>
+              <li><a href="" class="active">購買祭品/供品</a></li>
+              <li><a href="">業者合作</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__func">
+          <a href="" class="header__btn">我要祭拜</a>
+          <button class="header__menu d-lg-none">
+            <div class="bar bar-top"></div>
+            <div class="bar bar-middle"></div>
+            <div class="bar bar-bottom"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="memory-product buy">
+        <div class="container">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="" class="nav-link active">商品分類1</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a href="" class="nav-link">商品分類2</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a href="" class="nav-link">商品分類3</a>
+            </li>
+          </ul>
+          <div class="memory-product_content">
+            <div class="memory-product_main">
+              <div class="row">
+                <div class="col-lg-4 col-6">
+                  <div class="product_item">
+                    <div class="product_pic">
+                      <img src="./public/img/pic.png" alt="" />
+                      <div class="product_btns">
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#addcart-modal"
+                        >
+                          <span class="icon-purchase"></span>
+                        </a>
+                        <a href="">
+                          <span class="icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product_text">
+                      <h3 class="product_title">商品名稱</h3>
+                      <div class="product_price-detail">
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">線上追思</p>
+                            <p  class="product_price-detail_num">$400</p>
+                        </div>
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">實體宅配</p>
+                            <p  class="product_price-detail_num">$200</p>
+                        </div>
+                      </div>
+                      <div class="name-tag">
+                          <div class="name-tag_pic">
+                            <img src="./public/img/pic2.png" alt="" />
+                          </div>
+                          <p class="name-tag_name">業者名稱</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                  <div class="product_item">
+                    <div class="product_pic">
+                      <img src="./public/img/pic.png" alt="" />
+                      <div class="product_btns">
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#addcart-modal"
+                        >
+                          <span class="icon-purchase"></span>
+                        </a>
+                        <a href="">
+                          <span class="icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product_text">
+                      <h3 class="product_title">商品名稱</h3>
+                      <div class="product_price-detail">
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">線上追思</p>
+                            <p  class="product_price-detail_num">$400</p>
+                        </div>
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">實體宅配</p>
+                            <p  class="product_price-detail_num">$200</p>
+                        </div>
+                      </div>
+                      <div class="name-tag">
+                          <div class="name-tag_pic">
+                            <img src="./public/img/pic2.png" alt="" />
+                          </div>
+                          <p class="name-tag_name">業者名稱</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                  <div class="product_item">
+                    <div class="product_pic">
+                      <img src="./public/img/pic.png" alt="" />
+                      <div class="product_btns">
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#addcart-modal"
+                        >
+                          <span class="icon-purchase"></span>
+                        </a>
+                        <a href="">
+                          <span class="icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product_text">
+                      <h3 class="product_title">商品名稱</h3>
+                      <div class="product_price-detail">
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">線上追思</p>
+                            <p  class="product_price-detail_num">$400</p>
+                        </div>
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">實體宅配</p>
+                            <p  class="product_price-detail_num">$200</p>
+                        </div>
+                      </div>
+                      <div class="name-tag">
+                          <div class="name-tag_pic">
+                            <img src="./public/img/pic2.png" alt="" />
+                          </div>
+                          <p class="name-tag_name">業者名稱</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                  <div class="product_item">
+                    <div class="product_pic">
+                      <img src="./public/img/pic.png" alt="" />
+                      <div class="product_btns">
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#addcart-modal"
+                        >
+                          <span class="icon-purchase"></span>
+                        </a>
+                        <a href="">
+                          <span class="icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product_text">
+                      <h3 class="product_title">商品名稱</h3>
+                      <div class="product_price-detail">
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">線上追思</p>
+                            <p  class="product_price-detail_num">$400</p>
+                        </div>
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">實體宅配</p>
+                            <p  class="product_price-detail_num">$200</p>
+                        </div>
+                      </div>
+                      <div class="name-tag">
+                          <div class="name-tag_pic">
+                            <img src="./public/img/pic2.png" alt="" />
+                          </div>
+                          <p class="name-tag_name">業者名稱</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                  <div class="product_item">
+                    <div class="product_pic">
+                      <img src="./public/img/pic.png" alt="" />
+                      <div class="product_btns">
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#addcart-modal"
+                        >
+                          <span class="icon-purchase"></span>
+                        </a>
+                        <a href="">
+                          <span class="icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product_text">
+                      <h3 class="product_title">商品名稱</h3>
+                      <div class="product_price-detail">
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">線上追思</p>
+                            <p  class="product_price-detail_num">$400</p>
+                        </div>
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">實體宅配</p>
+                            <p  class="product_price-detail_num">$200</p>
+                        </div>
+                      </div>
+                      <div class="name-tag">
+                          <div class="name-tag_pic">
+                            <img src="./public/img/pic2.png" alt="" />
+                          </div>
+                          <p class="name-tag_name">業者名稱</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                  <div class="product_item">
+                    <div class="product_pic">
+                      <img src="./public/img/pic.png" alt="" />
+                      <div class="product_btns">
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#addcart-modal"
+                        >
+                          <span class="icon-purchase"></span>
+                        </a>
+                        <a href="">
+                          <span class="icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product_text">
+                      <h3 class="product_title">商品名稱</h3>
+                      <div class="product_price-detail">
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">線上追思</p>
+                            <p  class="product_price-detail_num">$400</p>
+                        </div>
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">實體宅配</p>
+                            <p  class="product_price-detail_num">$200</p>
+                        </div>
+                      </div>
+                      <div class="name-tag">
+                          <div class="name-tag_pic">
+                            <img src="./public/img/pic2.png" alt="" />
+                          </div>
+                          <p class="name-tag_name">業者名稱</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                  <div class="product_item">
+                    <div class="product_pic">
+                      <img src="./public/img/pic.png" alt="" />
+                      <div class="product_btns">
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#addcart-modal"
+                        >
+                          <span class="icon-purchase"></span>
+                        </a>
+                        <a href="">
+                          <span class="icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product_text">
+                      <h3 class="product_title">商品名稱</h3>
+                      <div class="product_price-detail">
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">線上追思</p>
+                            <p  class="product_price-detail_num">$400</p>
+                        </div>
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">實體宅配</p>
+                            <p  class="product_price-detail_num">$200</p>
+                        </div>
+                      </div>
+                      <div class="name-tag">
+                          <div class="name-tag_pic">
+                            <img src="./public/img/pic2.png" alt="" />
+                          </div>
+                          <p class="name-tag_name">業者名稱</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                  <div class="product_item">
+                    <div class="product_pic">
+                      <img src="./public/img/pic.png" alt="" />
+                      <div class="product_btns">
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#addcart-modal"
+                        >
+                          <span class="icon-purchase"></span>
+                        </a>
+                        <a href="">
+                          <span class="icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product_text">
+                      <h3 class="product_title">商品名稱</h3>
+                      <div class="product_price-detail">
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">線上追思</p>
+                            <p  class="product_price-detail_num">$400</p>
+                        </div>
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">實體宅配</p>
+                            <p  class="product_price-detail_num">$200</p>
+                        </div>
+                      </div>
+                      <div class="name-tag">
+                          <div class="name-tag_pic">
+                            <img src="./public/img/pic2.png" alt="" />
+                          </div>
+                          <p class="name-tag_name">業者名稱</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                  <div class="product_item">
+                    <div class="product_pic">
+                      <img src="./public/img/pic.png" alt="" />
+                      <div class="product_btns">
+                        <a
+                          data-bs-toggle="modal"
+                          data-bs-target="#addcart-modal"
+                        >
+                          <span class="icon-purchase"></span>
+                        </a>
+                        <a href="">
+                          <span class="icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product_text">
+                      <h3 class="product_title">商品名稱</h3>
+                      <div class="product_price-detail">
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">線上追思</p>
+                            <p  class="product_price-detail_num">$400</p>
+                        </div>
+                        <div class="product_price-detail_item">
+                            <p class="product_price-detail_text">實體宅配</p>
+                            <p  class="product_price-detail_num">$200</p>
+                        </div>
+                      </div>
+                      <div class="name-tag">
+                          <div class="name-tag_pic">
+                            <img src="./public/img/pic2.png" alt="" />
+                          </div>
+                          <p class="name-tag_name">業者名稱</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination">
+        <a href="" class="pagination_arrow">
+            <span class="icon-arrow-left"></span>
+        </a>
+        <ul>
+            <li><a href="" class="active">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+        </ul>
+        <a href="" class="pagination_arrow">
+            <span class="icon-arrow-right"></span>
+        </a>
+      </div>
+            </div>
+            <div class="purchase-sidebar-wrap">
+                <div class="purchase-sidebar">
+          <div class="purchase-sidebar_wrap">
+            <h3 class="purchase-sidebar_title">已選擇祭品/供品</h3>
+            <div class="purchase-sidebar_content">
+              <div class="purchase-sidebar_item">
+                <div class="purchase-sidebar_pic">
+                  <img src="./public/img/pic.png" alt="" />
+                  <button class="purchase-sidebar_delete">
+                    <span class="icon-x"></span>
+                  </button>
+                </div>
+                <div class="purchase-sidebar_text">
+                  <h4 class="purchase-sidebar_name">商品名稱</h4>
+                  <p class="purchase-sidebar_num">x1</p>
+                </div>
+              </div>
+              <div class="purchase-sidebar_item">
+                <div class="purchase-sidebar_pic">
+                  <img src="./public/img/pic.png" alt="" />
+                  <button class="purchase-sidebar_delete">
+                    <span class="icon-x"></span>
+                  </button>
+                </div>
+                <div class="purchase-sidebar_text">
+                  <h4 class="purchase-sidebar_name">商品名稱</h4>
+                  <p class="purchase-sidebar_num">x1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="purchase-sidebar_wrap">
+            <h3 class="purchase-sidebar_title">線上追思</h3>
+            <div class="purchase-sidebar_content">
+              <div class="purchase-sidebar_item">
+                <div class="purchase-sidebar_pic">
+                  <img src="./public/img/pic.png" alt="" />
+                  <button class="purchase-sidebar_delete">
+                    <span class="icon-x"></span>
+                  </button>
+                </div>
+                <div class="purchase-sidebar_text">
+                  <h4 class="purchase-sidebar_name">商品名稱</h4>
+                  <div class="purchase-sidebar_info">
+                    <p class="purchase-sidebar_num">$400</p>
+                    <div class="product-num">
+                      <button class="btn-minus">
+                        <span class="icon-minus"></span>
+                      </button>
+                      <p class="product-num_val">1</p>
+                      <button class="btn-plus">
+                        <span class="icon-plus"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="purchase-sidebar_item">
+                <div class="purchase-sidebar_pic">
+                  <img src="./public/img/pic.png" alt="" />
+                  <button class="purchase-sidebar_delete">
+                    <span class="icon-x"></span>
+                  </button>
+                </div>
+                <div class="purchase-sidebar_text">
+                  <h4 class="purchase-sidebar_name">商品名稱</h4>
+                  <div class="purchase-sidebar_info">
+                    <p class="purchase-sidebar_num">$400</p>
+                    <div class="product-num">
+                      <button class="btn-minus">
+                        <span class="icon-minus"></span>
+                      </button>
+                      <p class="product-num_val">1</p>
+                      <button class="btn-plus">
+                        <span class="icon-plus"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="purchase-sidebar_total">
+            <p class="purchase-sidebar_total_text">總計</p>
+            <p class="purchase-sidebar_total_price">$800</p>
+          </div>
+          <a href="" class="btn btn-fill w-100">
+            <span class="btn-text">下一步</span>
+            <span class="icon-arrow-right btn-icon"></span>
+          </a>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Copyright © 2025 追思雲</p>
+    </footer>
+
+
+    <div
+      class="modal fade"
+      id="addcart-modal"
+      tabindex="-1"
+      aria-labelledby="addcart-modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <span class="icon-x"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="product-detail">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="product-detail_pic">
+                      <img src="./public/img/pic.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="product-detail_text">
+                      <h1 class="product-detail_title">商品名稱</h1>
+                      <div class="name-tag">
+                        <div class="name-tag_pic">
+                          <img src="./public/img/pic2.png" alt="" />
+                        </div>
+                        <p class="name-tag_name">業者名稱</p>
+                      </div>
+                      <div class="product-detail_order">
+                        <div class="row">
+                          <div class="col-xl-6">
+                            <h2 class="product-detail_order_title">線上追思</h2>
+                            <div class="product-detail_order_num">
+                              <p class="product-detail_order_price">$40</p>
+                              <div class="product-num">
+                                <button class="btn-minus">
+                                  <span class="icon-minus"></span>
+                                </button>
+                                <p class="product-num_val">1</p>
+                                <button class="btn-plus">
+                                  <span class="icon-plus"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xl-6">
+                            <h2 class="product-detail_order_title">
+                              實體宅配(送線上追思)
+                            </h2>
+                            <div class="product-detail_order_num">
+                              <div class="d-flex align-items-center gap-3">
+                                <p class="product-detail_order_price">$200</p>
+                                <div class="d-flex align-items-center gap-2">
+                                  <p class="product-detail_order_text">
+                                    批發商
+                                  </p>
+                                  <p class="product-detail_order_price">$160</p>
+                                </div>
+                              </div>
+                              <div class="product-num">
+                                <button class="btn-minus">
+                                  <span class="icon-minus"></span>
+                                </button>
+                                <p class="product-num_val">1</p>
+                                <button class="btn-plus">
+                                  <span class="icon-plus"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail_btns">
+                        <div class="d-flex align-items-center gap-3">
+                          <a href="" class="btn btn-fill">
+                            <p class="btn-text">直接購買</p>
+                          </a>
+                          <button class="btn btn-fill btn-addcart" data-bs-dismiss="modal">
+                            <span class="btn-icon icon-purchase"></span>
+                            <p class="btn-text">加入購物車</p>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup"><p>已加入購物車</p></div>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="./public/js/jquery-ui/jquery-ui.js"></script>
+    <script src="./public/js/common.js"></script>
+    <script>
+        $(".btn-addcart").click(function() {
+            $(".popup").fadeIn(300).delay(1000).fadeOut(300);
+        })
+    </script>
+  </body>
+</html>

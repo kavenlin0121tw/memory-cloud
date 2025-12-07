@@ -50,6 +50,7 @@ body {
     background-size: 100%;
     background-position: 0 0;
     background-repeat: repeat;
+    font-family: $font-serif;
 }
 
 input::-webkit-outer-spin-button,
@@ -120,6 +121,7 @@ ul {
         font-family: $font-serif;
         font-weight: 700;
         transition: $transition;
+        margin: 0;
     }
     &-icon {
         font-size: 16px;
@@ -220,6 +222,12 @@ ul {
     text-align: center;
     font-family: $font-serif;
     color: $brown-2;
+    &-inner {
+        font-size: 40px;
+        font-weight: 900;
+        color: $primary-900;
+        margin: 0;
+    }
     @media screen and (max-width: 991px) {
         font-size: 36px;
     }
@@ -553,5 +561,120 @@ ul {
                 color: $primary-600;
             }
         }
+    }
+}
+
+.nav {
+  gap: 32px;
+  &-link {
+    padding: 0 0 6px;
+    border-radius: 0;
+    font-family: $font-serif;
+    font-weight: 900;
+    color: $text !important;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    &.active {
+      background-color: transparent !important;
+      color: $primary-600 !important;
+      border-color: $primary-600;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 16px;
+    margin-bottom: 20px;
+    &-link {
+      white-space: nowrap;
+      font-size: 16px;
+    }
+  }
+}
+
+.popup {
+    position: fixed;
+    width: 400px;
+    background-color: $white;
+    padding: 24px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 5;
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.modal {
+  &-content {
+    border: 0;
+    border-radius: 0;
+  }
+  &-header {
+    border: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    .btn-close {
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+  &-body {
+    padding: 0 40px 40px;
+  }
+  &-dialog {
+    margin-top: 100px;
+  }
+  @media screen and (max-width: 767px) {
+    &-body {
+      padding: 0 15px 40px;
+    }
+  }
+}
+
+.inner-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-top: 70px;
+    &_btns {
+        display: flex;
+        gap: 20px;
+        .btn {
+            padding: 8px 15px;
+            &-icon {
+                &::before {
+                    color: $primary-400;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    &_btns {
+        gap: 12px;
+        justify-content: flex-end;
+        width: 100%;
+        .btn {
+            padding: 8px;
+            gap: 4px;
+            &-text {
+                font-size: 14px;
+            }
+        }
+    }
     }
 }
