@@ -807,3 +807,30 @@ ul {
     }
     }
 }
+
+.switch {
+  position: relative;
+  width: 25px;
+  height: 15px;
+  border-radius: 100px;
+  background-color: $primary-100;
+  transition: $transition;
+  &_ball {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $primary-500;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    transition: $transition;
+  }
+  &.active {
+    background-color: $primary-500;
+    .switch_ball {
+      background-color: $primary-100;
+      left: calc(100% - 2px - 12px);
+    }
+  }
+}

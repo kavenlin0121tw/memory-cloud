@@ -928,6 +928,39 @@ ul {
   }
 }
 
+.switch {
+  position: relative;
+  width: 25px;
+  height: 15px;
+  border-radius: 100px;
+  background-color: #FFF1E3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.switch_ball {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #B47D46;
+  top: 50%;
+  left: 2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.switch.active {
+  background-color: #B47D46;
+}
+
+.switch.active .switch_ball {
+  background-color: #FFF1E3;
+  left: calc(100% - 2px - 12px);
+}
+
 .banner {
   position: relative;
   width: 100%;
@@ -3173,7 +3206,8 @@ ul {
   display: block;
 }
 
-.purchase-sidebar_input .input, .purchase-sidebar_input .select {
+.purchase-sidebar_input .input,
+.purchase-sidebar_input .select {
   width: 100%;
   height: 45px;
   border: 1px solid #CA9969;
@@ -3869,6 +3903,1018 @@ ul {
   .share_item_text {
     font-size: 18px;
   }
+}
+
+.memory-detail {
+  position: relative;
+}
+
+.memory-detail_btns {
+  position: absolute;
+  padding: 24px 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.memory-detail_btns .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.memory-detail_func {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.memory-detail_btn {
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 8px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.memory-detail_btn > span {
+  font-size: 20px;
+}
+
+.memory-detail_btn > span::before {
+  color: #9E6023;
+}
+
+.memory-detail_btn > p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.memory-sing {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56%;
+}
+
+.memory-sing > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.memory-sing > img.close-mouth.playing {
+  -webkit-animation: close-mouth 2s linear infinite normal;
+          animation: close-mouth 2s linear infinite normal;
+}
+
+.memory-sing p {
+  position: absolute;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.4em;
+  line-height: 1.8;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 40px;
+  width: 80%;
+  overflow: hidden;
+}
+
+.memory-worship {
+  position: relative;
+}
+
+.memory-worship_bg {
+  width: 100%;
+}
+
+.memory-worship_pic {
+  position: absolute;
+  width: 11.46%;
+  padding-bottom: calc(11.46% * 1.3152);
+  top: 18.96vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.memory-worship_pic > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.memory-worship_name {
+  position: absolute;
+  width: 8.4%;
+  left: 50%;
+  bottom: 10.97vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.memory-worship_name > img {
+  width: 100%;
+}
+
+.memory-worship_name > p {
+  position: absolute;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: #4A2500;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 0.5em;
+  left: 50%;
+  top: 13%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.memory-worship_btns {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  left: 0;
+  bottom: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+.memory-worship_btns button {
+  padding: 8px 40px;
+  background-color: #fff;
+  border: 1px solid #CA9969;
+  color: #CA9969;
+  font-weight: 700;
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.memory-worship_btns button:hover {
+  background-color: #CA9969;
+  color: #fff;
+}
+
+.memory-worship_offer_item {
+  position: absolute;
+  width: 10%;
+  padding-bottom: calc(10% * 0.7);
+}
+
+.memory-worship_offer_item > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  left: 0;
+}
+
+.memory-worship_offer.odd .memory-worship_offer_item:first-child {
+  bottom: 7.5vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+.memory-worship_offer.odd .memory-worship_offer_item:nth-child(2) {
+  bottom: 8vw;
+  left: 34vw;
+  z-index: 1;
+}
+
+.memory-worship_offer.odd .memory-worship_offer_item:nth-child(3) {
+  bottom: 8vw;
+  right: 34vw;
+  z-index: 1;
+}
+
+.memory-worship_offer.odd .memory-worship_offer_item:nth-child(4) {
+  bottom: 8vw;
+  right: 23vw;
+  z-index: 1;
+}
+
+.memory-worship_offer.odd .memory-worship_offer_item:nth-child(5) {
+  bottom: 8vw;
+  left: 23vw;
+  z-index: 1;
+}
+
+.memory-worship_offer.odd .memory-worship_offer_item:nth-child(6) {
+  bottom: 11vw;
+  left: 30vw;
+  z-index: 0;
+}
+
+.memory-worship_offer.odd .memory-worship_offer_item:nth-child(7) {
+  bottom: 11vw;
+  right: 30vw;
+  z-index: 0;
+}
+
+.memory-worship_offer.odd .memory-worship_offer_item:nth-child(8) {
+  bottom: 11vw;
+  left: 19vw;
+  z-index: 0;
+}
+
+.memory-worship_offer.odd .memory-worship_offer_item:nth-child(9) {
+  bottom: 11vw;
+  right: 19vw;
+  z-index: 0;
+}
+
+.memory-worship_offer.even .memory-worship_offer_item:first-child {
+  bottom: 7.5vw;
+  left: 38vw;
+  z-index: 1;
+}
+
+.memory-worship_offer.even .memory-worship_offer_item:nth-child(2) {
+  bottom: 7.5vw;
+  right: 38vw;
+  z-index: 1;
+}
+
+.memory-worship_offer.even .memory-worship_offer_item:nth-child(3) {
+  bottom: 7.5vw;
+  right: 26vw;
+  z-index: 1;
+}
+
+.memory-worship_offer.even .memory-worship_offer_item:nth-child(4) {
+  bottom: 7.5vw;
+  left: 26vw;
+  z-index: 1;
+}
+
+.memory-worship_offer.even .memory-worship_offer_item:nth-child(5) {
+  bottom: 11vw;
+  left: 33vw;
+  z-index: 0;
+}
+
+.memory-worship_offer.even .memory-worship_offer_item:nth-child(6) {
+  bottom: 11vw;
+  right: 33vw;
+  z-index: 0;
+}
+
+.memory-worship_offer.even .memory-worship_offer_item:nth-child(7) {
+  bottom: 11vw;
+  left: 21vw;
+  z-index: 0;
+}
+
+.memory-worship_offer.even .memory-worship_offer_item:nth-child(8) {
+  bottom: 11vw;
+  right: 21vw;
+  z-index: 0;
+}
+
+.memory-worship_offer.even .memory-worship_offer_item:nth-child(9) {
+  bottom: 7.5vw;
+  left: 15vw;
+  z-index: 1;
+}
+
+.memory-worship_offer.even .memory-worship_offer_item:nth-child(10) {
+  bottom: 7.5vw;
+  right: 15vw;
+  z-index: 1;
+}
+
+.memory-worship .offering-relative {
+  position: absolute;
+  width: 13.75%;
+  left: 3.89%;
+  bottom: 0;
+}
+
+.memory-worship .offering-relative_swiper {
+  overflow: hidden;
+}
+
+.memory-worship .offering-relative_item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 257%;
+}
+
+.memory-worship .offering-relative_item > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  left: 0;
+}
+
+.memory-worship .offering-relative_item > p {
+  position: absolute;
+  padding: 12px 10px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: #fff;
+  letter-spacing: 0.2em;
+  background-color: #333333;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+}
+
+.memory-worship .offering-family-main {
+  position: absolute;
+  width: 10%;
+  padding-bottom: calc(10% * 0.9);
+  right: 3.89%;
+  bottom: 0;
+}
+
+.memory-worship .offering-family-main > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  left: 0;
+}
+
+.memory-worship .offering-family_text {
+  position: absolute;
+  right: -10%;
+  bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.memory-worship .offering-family_text > p {
+  padding: 12px 10px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: #fff;
+  letter-spacing: 0.2em;
+  background-color: #333333;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+}
+
+.memory-worship .offering-family_btn {
+  padding: 8px 4px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  letter-spacing: 0.2em;
+  background-color: #B47D46;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+}
+
+.memory-worship .offering-family_btn:hover {
+  background-color: #9E6023;
+}
+
+.memory-worship .offering-family-other {
+  display: none;
+}
+
+.memory-worship .offering-family-other .offering-family_item {
+  position: absolute;
+  width: 10%;
+  padding-bottom: calc(10% * 0.7);
+}
+
+.memory-worship .offering-family-other .offering-family_item > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  left: 0;
+}
+
+.memory-worship .offering-family-other .offering-family_item:first-child {
+  top: 30.14vw;
+  left: 63.4vw;
+}
+
+.memory-worship .offering-family-other .offering-family_item:nth-child(2) {
+  top: 34.17vw;
+  left: 24.1vw;
+}
+
+.memory-worship .offering-family-other .offering-family_item:nth-child(3) {
+  top: 22.57vw;
+  left: 23.19vw;
+}
+
+.memory-worship .offering-family-other .offering-family_item:nth-child(4) {
+  top: 16.53vw;
+  left: 64.79vw;
+}
+
+.memory-worship .offering-family-other .offering-family_item:nth-child(5) {
+  top: 16.53vw;
+  left: 10.14vw;
+}
+
+.memory-worship .offering-family-other .offering-family_item:nth-child(6) {
+  top: 24.86vw;
+  left: 79.38vw;
+}
+
+.memory-worship .offering-family-other .offering-family_item:nth-child(7) {
+  top: 31.11vw;
+  left: 10.14vw;
+}
+
+.memory-worship .offering-family-other .offering-family_item:nth-child(8) {
+  top: 36.6vw;
+  left: 79.38vw;
+}
+
+.memory-worship .bow {
+  position: absolute;
+  width: 38%;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 3;
+  display: none;
+}
+
+.memory-worship .bow > img {
+  width: 100%;
+}
+
+.memory-worship .incense {
+  position: absolute;
+  width: 21%;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 3;
+  display: none;
+  -webkit-animation: insence 1s linear;
+          animation: insence 1s linear;
+}
+
+.memory-worship .incense > img {
+  width: 100%;
+}
+
+.memory-worship .flower {
+  position: absolute;
+  width: 21%;
+  left: 40%;
+  bottom: 0;
+  z-index: 3;
+  bottom: -5%;
+  display: none;
+  -webkit-animation: flower 1s linear;
+          animation: flower 1s linear;
+}
+
+.memory-worship .flower > img {
+  width: 100%;
+}
+
+.memory-worship.western .memory-worship_pic {
+  width: 19.38%;
+  padding-bottom: calc(19.38% * 1.3152);
+  top: 15.83vw;
+}
+
+.memory-worship.western .memory-worship_name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 5vw;
+}
+
+.memory-worship.western .memory-worship_name > p {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
+  font-size: 52px;
+  letter-spacing: 0.2em;
+  color: #fff;
+  position: static;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.memory-cta {
+  padding: 60px 20px;
+}
+
+.memory-cta .btn {
+  margin: 0 auto;
+  padding: 12px 45px;
+  background-color: #B47D46;
+}
+
+.memory-cta .btn:hover {
+  background-color: #85490D;
+  border-color: #85490D;
+}
+
+.memory-chat {
+  padding: 0 20px 120px;
+}
+
+.memory-chat_inner {
+  background-color: #fff;
+  padding: 30px;
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.memory-chat_inner h2 {
+  margin-bottom: 20px;
+  color: #763B00;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.memory-chat_content {
+  padding: 20px;
+  background-color: #FFFAF6;
+  margin-bottom: 20px;
+}
+
+.memory-chat_day {
+  padding: 30px 0;
+  border-bottom: 1px solid #FDDFC1;
+}
+
+.memory-chat_day:first-child {
+  padding-top: 0;
+}
+
+.memory-chat_day:last-child {
+  padding-bottom: 0;
+  border: 0;
+}
+
+.memory-chat_date {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #B47D46;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.memory-chat_item {
+  margin-bottom: 20px;
+}
+
+.memory-chat_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.memory-chat_name {
+  color: #9E6023;
+  font-weight: 700;
+  margin: 0;
+  font-size: 16px;
+}
+
+.memory-chat_time {
+  color: #ADADAD;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.memory-chat_text {
+  margin: 0;
+}
+
+.memory-chat_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFAF6;
+}
+
+.memory-chat_input input {
+  width: calc(100% - 46px);
+  padding: 0 15px;
+  border: 1px solid #E5C099;
+  border-right: 0;
+}
+
+.memory-chat_input input::-webkit-input-placeholder {
+  color: #E5C099;
+}
+
+.memory-chat_input input:-ms-input-placeholder {
+  color: #E5C099;
+}
+
+.memory-chat_input input::-ms-input-placeholder {
+  color: #E5C099;
+}
+
+.memory-chat_input input::placeholder {
+  color: #E5C099;
+}
+
+.memory-chat_input button {
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #CA9969;
+}
+
+.memory-chat_input button span {
+  font-size: 20px;
+}
+
+.memory-chat_input button span::before {
+  color: #fff;
+}
+
+.memory-chat_input button:hover {
+  background-color: #B47D46;
+}
+
+.memory-video {
+  padding-bottom: 120px;
+}
+
+.memory-video h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #763B00;
+  font-weight: 700;
+}
+
+.memory-video_swiper {
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.memory-video_item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin: 0 auto;
+}
+
+.memory-video_item video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  left: 0;
+}
+
+.memory-video .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.memory-video .swiper-slide-active {
+  -webkit-transform: scale(1.5) !important;
+          transform: scale(1.5) !important;
+}
+
+.memory-video .swiper-button-next, .memory-video .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #CA9969;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.memory-video .swiper-button-next span, .memory-video .swiper-button-prev span {
+  font-size: 24px;
+}
+
+.memory-video .swiper-button-next span::before, .memory-video .swiper-button-prev span::before {
+  color: #fff;
+}
+
+.memory-video .swiper-button-next .swiper-navigation-icon, .memory-video .swiper-button-prev .swiper-navigation-icon {
+  display: none;
+}
+
+.memory-video .swiper-button-next:hover, .memory-video .swiper-button-prev:hover {
+  background-color: #B47D46;
+}
+
+@media screen and (max-width: 991px) {
+  .memory-detail_btns {
+    position: static;
+    background-color: #CA9969;
+    padding: 16px 0;
+  }
+  .memory-detail_btns .container {
+    max-width: inherit;
+  }
+  .memory-detail_btns .btn {
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #fff;
+  }
+  .memory-detail_btns .btn .btn-text {
+    display: none;
+  }
+  .memory-detail_func {
+    gap: 12px;
+  }
+  .memory-detail_btn {
+    padding: 8px;
+    gap: 4px;
+  }
+  .memory-detail_btn span {
+    font-size: 14px;
+  }
+  .memory-detail_btn p {
+    font-size: 12px;
+  }
+  .memory-sing p {
+    font-size: 20px;
+  }
+  .memory-worship_name > p {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    top: 10%;
+  }
+  .memory-worship_btns {
+    gap: 12px;
+  }
+  .memory-worship_btns button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  .memory-worship .offering-relative_item > p {
+    padding: 4px;
+    font-size: 12px;
+  }
+  .memory-worship .offering-family_text > p {
+    padding: 4px;
+    font-size: 14px;
+  }
+  .memory-worship.western .memory-worship_name {
+    top: 3.5vw;
+  }
+  .memory-worship.western .memory-worship_name > p {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .memory-sing {
+    padding-bottom: 100%;
+  }
+  .memory-sing > img {
+    -o-object-position: 90% center;
+       object-position: 90% center;
+  }
+  .memory-sing p {
+    padding: 20px;
+    width: 60%;
+  }
+  .memory-chat_inner {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .memory-sing {
+    padding-bottom: 120%;
+  }
+  .memory-sing p {
+    padding: 16px;
+    width: 60%;
+  }
+  .memory-video h2 {
+    margin-bottom: 20px;
+  }
+  .memory-video_swiper {
+    padding: 0 0 60px;
+  }
+  .memory-video .swiper-slide-active {
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+  }
+  .memory-video .swiper-button-next, .memory-video .swiper-button-prev {
+    top: inherit;
+    bottom: 0;
+    left: 50%;
+  }
+  .memory-video .swiper-button-prev {
+    -webkit-transform: translateX(calc(-100% - 10px));
+            transform: translateX(calc(-100% - 10px));
+  }
+  .memory-video .swiper-button-next {
+    -webkit-transform: translateX(calc(10px));
+            transform: translateX(calc(10px));
+  }
+  .memory-worship.western .memory-worship_name {
+    top: 2vw;
+  }
+  .memory-worship.western .memory-worship_name > p {
+    font-size: 20px;
+  }
+}
+
+@-webkit-keyframes close-mouth {
+  0% {
+    opacity: 0;
+  }
+  33.3333% {
+    opacity: 1;
+  }
+  66.6666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes close-mouth {
+  0% {
+    opacity: 0;
+  }
+  33.3333% {
+    opacity: 1;
+  }
+  66.6666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes insence {
+  0% {
+    -webkit-transform: translate(-50%, 80%);
+            transform: translate(-50%, 80%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes insence {
+  0% {
+    -webkit-transform: translate(-50%, 80%);
+            transform: translate(-50%, 80%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flower {
+  0% {
+    -webkit-transform: translate(50%, 80%);
+            transform: translate(50%, 80%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes flower {
+  0% {
+    -webkit-transform: translate(50%, 80%);
+            transform: translate(50%, 80%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.bg-music {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
 }
 
 .contact {

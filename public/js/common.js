@@ -88,3 +88,7 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+$(".switch").click(function () {
+  $(this).toggleClass("active");
+})
