@@ -307,17 +307,23 @@
   }
   &_item {
     margin-bottom: 50px;
+    .check-item {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+    }
   }
   &_pic {
     position: relative;
     width: 100%;
     padding-bottom: 68%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: $white;
     > img {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       top: 0;
       left: 0;
       transition: $transition;
@@ -1192,6 +1198,22 @@
   }
   &-item {
     margin-bottom: 50px;
+    position: relative;
+  .btn-try {
+    .icon-pause {
+      display: none;
+    }
+    &.playing {
+      .icon {
+        &-play {
+          display: none;
+        }
+        &-pause {
+          display: block;
+        }
+      }
+    }
+  }
   }
   &_pic {
     position: relative;
@@ -1244,6 +1266,13 @@
     background-size: 40px;
     background-position: right center;
     background-repeat: no-repeat;
+  }
+  &_file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
   }
   @media screen and (max-width: 575px) {
     &_title,
@@ -1465,6 +1494,7 @@
   }
   &-worship {
     position: relative;
+    overflow: hidden;
     &_bg {
       width: 100%;
     }
@@ -1691,6 +1721,7 @@
         padding-bottom: calc(10% * 0.9);
         right: 3.89%;
         bottom: 0;
+        z-index: 5;
         > img {
           position: absolute;
           width: 100%;
@@ -1819,9 +1850,11 @@
     }
     &.western {
         .memory-worship_pic {
-            width: 19.38%;
-            padding-bottom: calc(19.38% * 1.3152);
-            top: 15.83vw;
+            width: 21.4%;
+            padding-bottom: calc(21.4% * 1.11);
+            top: 15.6vw;
+            left: 38.5%;
+            transform: none;
         }
         .memory-worship_name {
             width: fit-content;
@@ -1830,7 +1863,6 @@
                 writing-mode: horizontal-tb;
                 font-size: 52px;
                 letter-spacing: 0.2em;
-                color: $white;
                 position: static;
                 transform: none;
             }
@@ -1940,6 +1972,29 @@
         }
         &:hover {
           background-color: $primary-500;
+        }
+      }
+    }
+    &_emoji {
+      display: flex;
+      flex-wrap: wrap;
+      // padding: 4px;
+      background-color: $primary-100;
+      border: 1px solid $primary-400;
+      border-bottom: 0;
+      width: fit-content;
+      button {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 24px;
+        }
+        &:hover {
+          background-color: $primary-200;
         }
       }
     }

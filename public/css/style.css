@@ -238,6 +238,56 @@ ul {
   color: #fff;
 }
 
+.btn-fill-square {
+  width: 60px;
+  height: 60px;
+  background-color: #CA9969;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  gap: 2px;
+}
+
+.btn-fill-square .btn-icon {
+  font-size: 28px;
+}
+
+.btn-fill-square .btn-icon::before {
+  color: #fff;
+}
+
+.btn-fill-square .btn-text {
+  color: #fff;
+  font-size: 10px;
+  margin: 0;
+}
+
+.btn-fill-square:hover {
+  background-color: #85490D;
+  border-color: #85490D;
+}
+
+@media screen and (max-width: 575px) {
+  .btn-fill-square {
+    width: 40px;
+    height: 40px;
+  }
+  .btn-fill-square .btn-icon {
+    font-size: 20px;
+  }
+}
+
 .btn-alert {
   width: 52px;
   height: 32px;
@@ -264,6 +314,19 @@ ul {
   top: 0;
   left: 0;
   opacity: 0;
+}
+
+.btn-fixed {
+  position: fixed;
+  right: 32px;
+  bottom: 100px;
+}
+
+@media screen and (max-width: 575px) {
+  .btn-fixed {
+    right: 20px;
+    bottom: 80px;
+  }
 }
 
 .title {
@@ -471,6 +534,12 @@ ul {
 
 .header__nav ul a.active::after, .header__nav ul a:hover::after {
   height: 46px;
+}
+
+.header__nav ul a.disabled {
+  pointer-events: none;
+  color: #919191;
+  cursor: not-allowed;
 }
 
 .header__nav ul.header-nav-account {
@@ -1322,14 +1391,15 @@ ul {
   width: 100%;
   padding-bottom: 68%;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .tab-slider_card_pic > img {
   position: absolute;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   top: 0;
   left: 0;
   -webkit-transition: 0.3s;
@@ -1517,8 +1587,11 @@ ul {
 
 .gallery .container {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .gallery_item {
@@ -1615,9 +1688,7 @@ ul {
 }
 
 .gallery_overview {
-  position: absolute;
   width: 300px;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1631,8 +1702,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 0;
-  left: 0;
   background-color: rgba(202, 153, 105, 0.9);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
@@ -1659,7 +1728,20 @@ ul {
   color: #fff;
 }
 
+.gallery_swiper {
+  overflow: hidden;
+  padding: 15px;
+}
+
+.gallery_content {
+  width: calc(100% - 300px);
+  padding: 100px 24px;
+}
+
 @media screen and (max-width: 991px) {
+  .gallery {
+    padding: 60px 0;
+  }
   .gallery_overview {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1683,6 +1765,10 @@ ul {
   .gallery_overview_text {
     font-size: 16px;
     padding-bottom: 12px;
+  }
+  .gallery_content {
+    width: 100%;
+    padding: 0;
   }
 }
 
@@ -2493,20 +2579,27 @@ ul {
   margin-bottom: 50px;
 }
 
+.product_item .check-item {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
 .product_pic {
   position: relative;
   width: 100%;
   padding-bottom: 68%;
   -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
 .product_pic > img {
   position: absolute;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   top: 0;
   left: 0;
   -webkit-transition: 0.3s;
@@ -3664,6 +3757,19 @@ ul {
 
 .music-item {
   margin-bottom: 50px;
+  position: relative;
+}
+
+.music-item .btn-try .icon-pause {
+  display: none;
+}
+
+.music-item .btn-try.playing .icon-play {
+  display: none;
+}
+
+.music-item .btn-try.playing .icon-pause {
+  display: block;
 }
 
 .music_pic {
@@ -3733,6 +3839,14 @@ ul {
   background-size: 40px;
   background-position: right center;
   background-repeat: no-repeat;
+}
+
+.music_file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 575px) {
@@ -4016,6 +4130,7 @@ ul {
 
 .memory-worship {
   position: relative;
+  overflow: hidden;
 }
 
 .memory-worship_bg {
@@ -4287,6 +4402,7 @@ ul {
   padding-bottom: calc(10% * 0.9);
   right: 3.89%;
   bottom: 0;
+  z-index: 5;
 }
 
 .memory-worship .offering-family-main > img {
@@ -4450,9 +4566,12 @@ ul {
 }
 
 .memory-worship.western .memory-worship_pic {
-  width: 19.38%;
-  padding-bottom: calc(19.38% * 1.3152);
-  top: 15.83vw;
+  width: 21.4%;
+  padding-bottom: calc(21.4% * 1.11);
+  top: 15.6vw;
+  left: 38.5%;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .memory-worship.western .memory-worship_name {
@@ -4468,7 +4587,6 @@ ul {
           writing-mode: horizontal-tb;
   font-size: 52px;
   letter-spacing: 0.2em;
-  color: #fff;
   position: static;
   -webkit-transform: none;
           transform: none;
@@ -4629,6 +4747,43 @@ ul {
 
 .memory-chat_input button:hover {
   background-color: #B47D46;
+}
+
+.memory-chat_emoji {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #FFF1E3;
+  border: 1px solid #CA9969;
+  border-bottom: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.memory-chat_emoji button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.memory-chat_emoji button img {
+  width: 24px;
+}
+
+.memory-chat_emoji button:hover {
+  background-color: #FDDFC1;
 }
 
 .memory-video {

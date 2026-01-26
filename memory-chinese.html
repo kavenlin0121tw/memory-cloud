@@ -32,10 +32,10 @@
             <ul>
               <li><a href="./about.html">關於追思雲</a></li>
               <li><a href="./news.html">最新公告</a></li>
-              <li><a href="./memory-introduce.html" class="active">線上追思</a></li>
+              <li><a href="./memory-introduce.html" class="active">線上追思房</a></li>
               <li><a href="./story.html">個人故事館</a></li>
               <li><a href="./buy.html">購買祭品/供品</a></li>
-              <li><a href="./login-business.html">業者合作</a></li>
+              <li><a href="./login-business.html" class="disabled">業者合作</a></li>
             </ul>
           </nav>
         </div>
@@ -105,7 +105,7 @@
             alt=""
           />
           <div class="memory-worship_pic">
-            <img src="./public/img/pic.png" alt="" />
+            <img src="./public/img/person.png" alt="" />
           </div>
           <div class="memory-worship_name">
             <img src="./public/img/memory-chinese-name.png" alt="" />
@@ -258,6 +258,18 @@
                 </div>
               </div>
             </div>
+            <div class="memory-chat_emoji">
+              <button><img src="./public/img/Confounded Face.png" alt=""></button>
+              <button><img src="./public/img/Grinning Face.png" alt=""></button>
+              <button><img src="./public/img/Face With Tears Of Joy.png" alt=""></button>
+              <button><img src="./public/img/Upside Down Face.png" alt=""></button>
+              <button><img src="./public/img/Smiling Face With Halo.png" alt=""></button>
+              <button><img src="./public/img/Smiling Face With Hearts.png" alt=""></button>
+              <button><img src="./public/img/Smiling Face With Tear.png" alt=""></button>
+              <button><img src="./public/img/Loudly Crying Face.png" alt=""></button>
+              <button><img src="./public/img/Hugging Face.png" alt=""></button>
+              <button><img src="./public/img/Smiling Face With Smiling Eyes.png" alt=""></button>
+            </div>
             <form action="" class="memory-chat_input">
               <input type="text" placeholder="留言" />
               <button><span class="icon-send"></span></button>
@@ -372,6 +384,11 @@
     >
       你的瀏覽器版本太低，不支援audio標籤
     </audio>
+
+    <a href="./story-detail.html" class="btn btn-fill-square btn-fixed">
+      <span class="icon-story btn-icon"></span>
+      <p class="btn-text">個人故事館</p>
+    </a>
 
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
