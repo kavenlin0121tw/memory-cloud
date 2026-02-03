@@ -1,419 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>追思雲</title>
-    <meta property="og:image" content="./public/img/share.jpg" />
-    <meta property="og:url" content="./public/img/share.jpg" />
-    <meta property="og:image" content="./public/img/share.jpg" />
-    <meta property="og:url" content="./public/img/share.jpg" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./public/icomoon/style.css" />
-    <link rel="stylesheet" href="./public/css/jquery-ui/jquery-ui.css" />
-    <link rel="stylesheet" href="./public/css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__main">
-          <a href="./index.html" class="header__logo"
-            ><img src="./public/img/logo.svg" alt=""
-          /></a>
-          <nav class="header__nav">
-            <ul>
-              <li><a href="./about.html">關於追思雲</a></li>
-              <li><a href="./news.html">最新公告</a></li>
-              <li><a href="./memory-introduce.html" class="active">線上追思房</a></li>
-              <li><a href="./story.html">個人故事館</a></li>
-              <li><a href="./buy.html">購買祭品/供品</a></li>
-              <li><a href="./login-business.html" class="disabled">業者合作</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__func">
-          <a href="./login-client.html" class="header__btn">我要祭拜</a>
-          <button class="header__menu d-lg-none">
-            <div class="bar bar-top"></div>
-            <div class="bar bar-middle"></div>
-            <div class="bar bar-bottom"></div>
-          </button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>追思雲</title>
+  <meta property="og:image" content="./public/img/share.jpg" />
+  <meta property="og:url" content="./public/img/share.jpg" />
+  <meta property="og:image" content="./public/img/share.jpg" />
+  <meta property="og:url" content="./public/img/share.jpg" />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./public/icomoon/style.css" />
+  <link rel="stylesheet" href="./public/css/jquery-ui/jquery-ui.css" />
+  <link rel="stylesheet" href="./public/css/style.css" />
+  <style>
+    @media screen and (max-width: 575px) {
+      .btn-fill-square .btn-text {
+        font-size: 7px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__main">
+        <a href="./index.html" class="header__logo"><img src="./public/img/logo.svg" alt="" /></a>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="./about.html">關於追思雲</a></li>
+            <li><a href="./news.html">最新公告</a></li>
+            <li><a href="./memory-introduce.html" class="active">線上追思房</a></li>
+            <li><a href="./story.html">個人故事館</a></li>
+            <li><a href="./buy.html">購買祭品/供品</a></li>
+            <li><a href="./login-business.html" class="disabled">業者合作</a></li>
+          </ul>
+        </nav>
       </div>
-    </header>
-    <main class="main">
-      <div class="memory-detail">
-        <div class="memory-detail_btns">
-          <div class="container">
-            <a href="" class="btn btn-fill">
-              <span class="btn-icon icon-arrow-left"></span>
-              <p class="btn-text">上一頁</p>
+      <div class="header__func">
+        <a href="./login-client.html" class="header__btn">我要祭拜</a>
+        <button class="header__menu d-lg-none">
+          <div class="bar bar-top"></div>
+          <div class="bar bar-middle"></div>
+          <div class="bar bar-bottom"></div>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="memory-detail">
+      <div class="memory-detail_btns">
+        <div class="container">
+          <a href="" class="btn btn-fill">
+            <span class="btn-icon icon-arrow-left"></span>
+            <p class="btn-text">上一頁</p>
+          </a>
+          <div class="memory-detail_func">
+            <div class="memory-detail_btn">
+              <span class="icon-music"></span>
+              <p>音樂</p>
+              <button class="switch music-switch">
+                <div class="switch_ball"></div>
+              </button>
+            </div>
+            <a href="" class="memory-detail_btn">
+              <span class="icon-share"></span>
+              <p>分享好友</p>
             </a>
-            <div class="memory-detail_func">
-              <div class="memory-detail_btn">
-                <span class="icon-music"></span>
-                <p>音樂</p>
-                <button class="switch music-switch">
-                  <div class="switch_ball"></div>
-                </button>
-              </div>
-              <a href="" class="memory-detail_btn">
-                <span class="icon-share"></span>
-                <p>分享好友</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="memory-worship western">
-          <img
-            class="memory-worship_bg"
-            src="./public/img/memory-western.jpg"
-            alt=""
-          />
-          <div class="memory-worship_pic">
-            <img src="./public/img/person.png" alt="" />
-          </div>
-          <div class="memory-worship_name">
-            <p>王小明</p>
-          </div>
-          <div class="memory-worship_btns">
-            <button class="btn-bow">鞠躬</button>
-            <button class="btn-incense">禱告</button>
-            <button class="btn-flower">獻花</button>
-          </div>
-          <div class="offering-relative">
-            <div class="swiper-container offering-relative_swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="offering-relative_item">
-                    <img src="./public/img/offering1.png" alt="" />
-                    <p>親屬姓名</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="offering-relative_item">
-                    <img src="./public/img/offering2.png" alt="" />
-                    <p>親屬姓名</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="offering-relative_item">
-                    <img src="./public/img/offering3.png" alt="" />
-                    <p>親屬姓名</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="offering-family-main">
-            <div class="offering-family_item">
-              <img src="./public/img/offering3.png" alt="" />
-              <div class="offering-family_text">
-                <p>家屬姓名</p>
-                <button class="offering-family_btn">展開祭品</button>
-              </div>
-            </div>
-          </div>
-          <div class="offering-family-other">
-            <div class="offering-family_item">
-              <img src="./public/img/offering3.png" alt="" />
-            </div>
-            <div class="offering-family_item">
-              <img src="./public/img/offering3.png" alt="" />
-            </div>
-            <div class="offering-family_item">
-              <img src="./public/img/offering3.png" alt="" />
-            </div>
-            <div class="offering-family_item">
-              <img src="./public/img/offering3.png" alt="" />
-            </div>
-            <div class="offering-family_item">
-              <img src="./public/img/offering3.png" alt="" />
-            </div>
-            <div class="offering-family_item">
-              <img src="./public/img/offering3.png" alt="" />
-            </div>
-            <div class="offering-family_item">
-              <img src="./public/img/offering3.png" alt="" />
-            </div>
-            <div class="offering-family_item">
-              <img src="./public/img/offering3.png" alt="" />
-            </div>
-          </div>
-          <div class="bow">
-            <img src="./public/img/bow.png" alt="" />
-          </div>
-          <div class="incense">
-            <img src="./public/img/pray.png" alt="" />
-          </div>
-          <div class="flower">
-            <img src="./public/img/flower.png" alt="" />
-          </div>
-        </div>
-        <div class="memory-cta">
-          <a href="" class="btn btn-fill">購買祭品</a>
-        </div>
-        <div class="memory-chat">
-          <div class="memory-chat_inner">
-            <h2>家屬線上聊天區</h2>
-            <div class="memory-chat_content">
-              <div class="memory-chat_day">
-                <p class="memory-chat_date">2025/04/03</p>
-                <div class="memory-chat_item">
-                  <div class="memory-chat_head">
-                    <h3 class="memory-chat_name">家屬姓名</h3>
-                    <p class="memory-chat_time">20:03</p>
-                  </div>
-                  <p class="memory-chat_text">
-                    不存得風！電企山解氣門聲回：上未們跟物。民有得他視難理一生者能生問運種沒人痛生人的家業獨他包已我信，一進數縣舉病找的問一上就它著全冷卻示樣落能人。
-                  </p>
-                </div>
-                <div class="memory-chat_item">
-                  <div class="memory-chat_head">
-                    <h3 class="memory-chat_name">家屬姓名</h3>
-                    <p class="memory-chat_time">20:03</p>
-                  </div>
-                  <p class="memory-chat_text">
-                    不存得風！電企山解氣門聲回：上未們跟物。民有得他視難理一生者能生問運種沒人痛生人的家業獨他包已我信，一進數縣舉病找的問一上就它著全冷卻示樣落能人。
-                  </p>
-                </div>
-              </div>
-              <div class="memory-chat_day">
-                <p class="memory-chat_date">2025/04/04</p>
-                <div class="memory-chat_item">
-                  <div class="memory-chat_head">
-                    <h3 class="memory-chat_name">家屬姓名</h3>
-                    <p class="memory-chat_time">20:03</p>
-                  </div>
-                  <p class="memory-chat_text">
-                    不存得風！電企山解氣門聲回：上未們跟物。民有得他視難理一生者能生問運種沒人痛生人的家業獨他包已我信，一進數縣舉病找的問一上就它著全冷卻示樣落能人。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="memory-chat_emoji">
-              <button><img src="./public/img/Confounded Face.png" alt=""></button>
-              <button><img src="./public/img/Grinning Face.png" alt=""></button>
-              <button><img src="./public/img/Face With Tears Of Joy.png" alt=""></button>
-              <button><img src="./public/img/Upside Down Face.png" alt=""></button>
-              <button><img src="./public/img/Smiling Face With Halo.png" alt=""></button>
-              <button><img src="./public/img/Smiling Face With Hearts.png" alt=""></button>
-              <button><img src="./public/img/Smiling Face With Tear.png" alt=""></button>
-              <button><img src="./public/img/Loudly Crying Face.png" alt=""></button>
-              <button><img src="./public/img/Hugging Face.png" alt=""></button>
-              <button><img src="./public/img/Smiling Face With Smiling Eyes.png" alt=""></button>
-            </div>
-            <form action="" class="memory-chat_input">
-              <input type="text" placeholder="留言" />
-              <button><span class="icon-send"></span></button>
-            </form>
-          </div>
-        </div>
-        <div class="memory-video">
-          <div class="container">
-            <h2>追思牆</h2>
-            <div class="swiper-container memory-video_swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="memory-video_item">
-                    <video
-                      class="w-100"
-                      src="./public/video/video.mp4"
-                      controls
-                    ></video>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="memory-video_item">
-                    <video
-                      class="w-100"
-                      src="./public/video/video.mp4"
-                      controls
-                    ></video>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="memory-video_item">
-                    <video
-                      class="w-100"
-                      src="./public/video/video.mp4"
-                      controls
-                    ></video>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="memory-video_item">
-                    <video
-                      class="w-100"
-                      src="./public/video/video.mp4"
-                      controls
-                    ></video>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="memory-video_item">
-                    <video
-                      class="w-100"
-                      src="./public/video/video.mp4"
-                      controls
-                    ></video>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="memory-video_item">
-                    <video
-                      class="w-100"
-                      src="./public/video/video.mp4"
-                      controls
-                    ></video>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="memory-video_item">
-                    <video
-                      class="w-100"
-                      src="./public/video/video.mp4"
-                      controls
-                    ></video>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="memory-video_item">
-                    <video
-                      class="w-100"
-                      src="./public/video/video.mp4"
-                      controls
-                    ></video>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="memory-video_item">
-                    <video
-                      class="w-100"
-                      src="./public/video/video.mp4"
-                      controls
-                    ></video>
-                  </div>
-                </div>
-              </div>
-      <div class="swiper-button-next"><span class="icon-arrow-right"></span></div>
-      <div class="swiper-button-prev"><span class="icon-arrow-left"></span></div>
-            </div>
           </div>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <p>Copyright © 2025 追思雲</p>
-    </footer>
+      <div class="memory-worship western">
+        <img class="memory-worship_bg" src="./public/img/memory-western.jpg" alt="" />
+        <div class="memory-worship_pic">
+          <img src="./public/img/person.png" alt="" />
+        </div>
+        <div class="memory-worship_name">
+          <p>王小明</p>
+        </div>
+        <div class="memory-worship_btns">
+          <button class="btn-bow">鞠躬</button>
+          <button class="btn-incense">禱告</button>
+          <button class="btn-flower">獻花</button>
+        </div>
+        <div class="offering-relative">
+          <div class="swiper-container offering-relative_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="offering-relative_item">
+                  <img src="./public/img/offering1.png" alt="" />
+                  <p>親屬姓名</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offering-relative_item">
+                  <img src="./public/img/offering2.png" alt="" />
+                  <p>親屬姓名</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="offering-relative_item">
+                  <img src="./public/img/offering3.png" alt="" />
+                  <p>親屬姓名</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offering-family-main">
+          <div class="offering-family_item">
+            <img src="./public/img/offering3.png" alt="" />
+            <div class="offering-family_text">
+              <p>家屬姓名</p>
+              <button class="offering-family_btn">展開祭品</button>
+            </div>
+          </div>
+        </div>
+        <div class="offering-family-other">
+          <div class="offering-family_item">
+            <img src="./public/img/offering3.png" alt="" />
+          </div>
+          <div class="offering-family_item">
+            <img src="./public/img/offering3.png" alt="" />
+          </div>
+          <div class="offering-family_item">
+            <img src="./public/img/offering3.png" alt="" />
+          </div>
+          <div class="offering-family_item">
+            <img src="./public/img/offering3.png" alt="" />
+          </div>
+          <div class="offering-family_item">
+            <img src="./public/img/offering3.png" alt="" />
+          </div>
+          <div class="offering-family_item">
+            <img src="./public/img/offering3.png" alt="" />
+          </div>
+          <div class="offering-family_item">
+            <img src="./public/img/offering3.png" alt="" />
+          </div>
+          <div class="offering-family_item">
+            <img src="./public/img/offering3.png" alt="" />
+          </div>
+        </div>
+        <div class="bow">
+          <img src="./public/img/bow.png" alt="" />
+        </div>
+        <div class="incense">
+          <img src="./public/img/pray.png" alt="" />
+        </div>
+        <div class="flower">
+          <img src="./public/img/flower.png" alt="" />
+        </div>
+      </div>
+      <div class="memory-cta">
+        <a href="" class="btn btn-fill">購買祭品</a>
+      </div>
+      <div class="memory-chat">
+        <div class="memory-chat_inner">
+          <h2>家屬線上聊天區</h2>
+          <div class="memory-chat_content">
+            <div class="memory-chat_day">
+              <p class="memory-chat_date">2025/04/03</p>
+              <div class="memory-chat_item">
+                <div class="memory-chat_head">
+                  <h3 class="memory-chat_name">家屬姓名</h3>
+                  <p class="memory-chat_time">20:03</p>
+                </div>
+                <p class="memory-chat_text">
+                  不存得風！電企山解氣門聲回：上未們跟物。民有得他視難理一生者能生問運種沒人痛生人的家業獨他包已我信，一進數縣舉病找的問一上就它著全冷卻示樣落能人。
+                </p>
+              </div>
+              <div class="memory-chat_item">
+                <div class="memory-chat_head">
+                  <h3 class="memory-chat_name">家屬姓名</h3>
+                  <p class="memory-chat_time">20:03</p>
+                </div>
+                <p class="memory-chat_text">
+                  不存得風！電企山解氣門聲回：上未們跟物。民有得他視難理一生者能生問運種沒人痛生人的家業獨他包已我信，一進數縣舉病找的問一上就它著全冷卻示樣落能人。
+                </p>
+              </div>
+            </div>
+            <div class="memory-chat_day">
+              <p class="memory-chat_date">2025/04/04</p>
+              <div class="memory-chat_item">
+                <div class="memory-chat_head">
+                  <h3 class="memory-chat_name">家屬姓名</h3>
+                  <p class="memory-chat_time">20:03</p>
+                </div>
+                <p class="memory-chat_text">
+                  不存得風！電企山解氣門聲回：上未們跟物。民有得他視難理一生者能生問運種沒人痛生人的家業獨他包已我信，一進數縣舉病找的問一上就它著全冷卻示樣落能人。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="memory-chat_emoji">
+            <button><img src="./public/img/Confounded Face.png" alt=""></button>
+            <button><img src="./public/img/Grinning Face.png" alt=""></button>
+            <button><img src="./public/img/Face With Tears Of Joy.png" alt=""></button>
+            <button><img src="./public/img/Upside Down Face.png" alt=""></button>
+            <button><img src="./public/img/Smiling Face With Halo.png" alt=""></button>
+            <button><img src="./public/img/Smiling Face With Hearts.png" alt=""></button>
+            <button><img src="./public/img/Smiling Face With Tear.png" alt=""></button>
+            <button><img src="./public/img/Loudly Crying Face.png" alt=""></button>
+            <button><img src="./public/img/Hugging Face.png" alt=""></button>
+            <button><img src="./public/img/Smiling Face With Smiling Eyes.png" alt=""></button>
+          </div>
+          <form action="" class="memory-chat_input">
+            <input type="text" placeholder="留言" />
+            <button><span class="icon-send"></span></button>
+          </form>
+        </div>
+      </div>
+      <div class="memory-video">
+        <div class="container">
+          <h2>追思牆</h2>
+          <div class="swiper-container memory-video_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="memory-video_item">
+                  <video class="w-100" src="./public/video/video.mp4" controls></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="memory-video_item">
+                  <video class="w-100" src="./public/video/video.mp4" controls></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="memory-video_item">
+                  <video class="w-100" src="./public/video/video.mp4" controls></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="memory-video_item">
+                  <video class="w-100" src="./public/video/video.mp4" controls></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="memory-video_item">
+                  <video class="w-100" src="./public/video/video.mp4" controls></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="memory-video_item">
+                  <video class="w-100" src="./public/video/video.mp4" controls></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="memory-video_item">
+                  <video class="w-100" src="./public/video/video.mp4" controls></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="memory-video_item">
+                  <video class="w-100" src="./public/video/video.mp4" controls></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="memory-video_item">
+                  <video class="w-100" src="./public/video/video.mp4" controls></video>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"><span class="icon-arrow-right"></span></div>
+            <div class="swiper-button-prev"><span class="icon-arrow-left"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Copyright © 2025 追思雲</p>
+  </footer>
+  <audio class="bg-music" id="bgMusic" controls="controls" loop="loop" preload="auto" src="./public/music/music-1.mp3">
+    你的瀏覽器版本太低，不支援audio標籤
+  </audio>
+  <a href="./story-detail.html" class="btn btn-fill-square btn-fixed">
+    <span class="icon-story btn-icon"></span>
+    <p class="btn-text">個人故事館</p>
+  </a>
+  <script src="./public/js/jquery/jquery.min.js"></script>
+  <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+  <script src="./public/js/jquery-ui/jquery-ui.js"></script>
+  <script src="./public/js/twzipcode/jquery.twzipcode.js"></script>
+  <script src="./public/js/mansory/masonry.pkgd.min.js"></script>
+  <script src="./public/js/common.js"></script>
+  <script>
+    var music = document.getElementById("bgMusic");
+    $(".music-switch").click(function () {
+      if ($(this).hasClass("active")) {
+        music.play();
+        $(".close-mouth").addClass("playing");
+      } else {
+        music.pause();
+        $(".close-mouth").removeClass("playing");
+      }
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".offering-relative_swiper", {
+      slidesPerView: 1,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      speed: 1000,
+    });
+  </script>
+  <script>
+    $(".offering-family_btn").click(function () {
+      if ($(this).hasClass("expand")) {
+        $(this).text("展開祭品");
+        $(".offering-family-other").fadeOut(300);
+        $(this).removeClass("expand");
+      } else {
+        $(this).text("收回祭品");
+        $(".offering-family-other").fadeIn(300);
+        $(this).addClass("expand");
+      }
+    });
 
-    <audio
-      class="bg-music"
-      id="bgMusic"
-      controls="controls"
-      loop="loop"
-      preload="auto"
-      src="./public/music/music-1.mp3"
-    >
-      你的瀏覽器版本太低，不支援audio標籤
-    </audio>
+    $(".memory-worship_btns button").click(function () {
+      $(this)
+        .parents(".memory-worship_btns")
+        .fadeOut(300)
+        .delay(2000)
+        .fadeIn(300)
+        .css("display", "flex");
+    });
 
-    <script src="./public/js/jquery/jquery.min.js"></script>
-    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
-    <script src="./public/js/jquery-ui/jquery-ui.js"></script>
-    <script src="./public/js/twzipcode/jquery.twzipcode.js"></script>
-    <script src="./public/js/mansory/masonry.pkgd.min.js"></script>
-    <script src="./public/js/common.js"></script>
-    <script>
-      var music = document.getElementById("bgMusic");
-      $(".music-switch").click(function () {
-        if ($(this).hasClass("active")) {
-          music.play();
-          $(".close-mouth").addClass("playing");
-        } else {
-          music.pause();
-          $(".close-mouth").removeClass("playing");
+    $(".btn-bow").click(function () {
+      $(".bow").fadeIn(300).delay(2000).fadeOut(300);
+    });
+
+    $(".btn-incense").click(function () {
+      $(".incense").fadeIn(300).delay(2000).fadeOut(300);
+    });
+
+    $(".btn-flower").click(function () {
+      $(".flower").fadeIn(300).delay(2000).fadeOut(300);
+    });
+  </script>
+  <script>
+    var swiperWall = new Swiper(".memory-video_swiper", {
+      slidesPerView: 1,
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 150,
+        modifier: 1,
+        slideShadows: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 3,
         }
-      });
-    </script>
-    <script>
-      var swiper = new Swiper(".offering-relative_swiper", {
-        slidesPerView: 1,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        loop: true,
-        speed: 1000,
-      });
-    </script>
-    <script>
-      $(".offering-family_btn").click(function () {
-        if ($(this).hasClass("expand")) {
-          $(this).text("展開祭品");
-          $(".offering-family-other").fadeOut(300);
-          $(this).removeClass("expand");
-        } else {
-          $(this).text("收回祭品");
-          $(".offering-family-other").fadeIn(300);
-          $(this).addClass("expand");
-        }
-      });
+      }
+    });
+  </script>
+</body>
 
-      $(".memory-worship_btns button").click(function () {
-        $(this)
-          .parents(".memory-worship_btns")
-          .fadeOut(300)
-          .delay(2000)
-          .fadeIn(300)
-          .css("display", "flex");
-      });
-
-      $(".btn-bow").click(function () {
-        $(".bow").fadeIn(300).delay(2000).fadeOut(300);
-      });
-
-      $(".btn-incense").click(function () {
-        $(".incense").fadeIn(300).delay(2000).fadeOut(300);
-      });
-
-      $(".btn-flower").click(function () {
-        $(".flower").fadeIn(300).delay(2000).fadeOut(300);
-      });
-    </script>
-    <script>
-      var swiperWall = new Swiper(".memory-video_swiper", {
-        slidesPerView: 1,
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        loop: true,
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 150,
-          modifier: 1,
-          slideShadows: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          576: {
-            slidesPerView: 3,
-          }
-        }
-      });
-    </script>
-  </body>
 </html>
